@@ -1,0 +1,98 @@
+{
+	//Client
+	"Bot Status": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.status",
+		"body": [
+			"bot.status({"
+				"\ttext: \"${1:TEXT}\"",
+				"\ttype: \"${2:PLAYING}\"",
+				"\tstatus: \"${3:idle}\"",
+				"\ttime: 12"
+			  "})",
+		],
+		"description": "Setting a Client Status"
+	},
+	"Bot Variable": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.variable",
+		"body": [
+			"bot.variable({"
+				"\t\"string\": \"${1:string}\"",
+				"\t\"int\": ${2:number}",
+				"\t\"boolean\": \"${3:true/false}\"",
+			  "})",
+		],
+		"description": "Setting a Client Variable"
+	},
+	"Bot Custom Function": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.functionManager.createCustomFunction",
+		"body": [
+			"bot.functionManager.createCustomFunction({"
+				"\tname: \"${1:name}\","
+				"\tparams: [${2:\"params\"}],"
+				"\ttype: ${3:\"aoi.js/djs\"},"
+				"\tcode: `${4:The code to be returned}`"
+				"})",
+		],
+		"description": "Setting a Client Custom Functions"
+	},
+	"Bot Command": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.command",
+		"body": [
+			"bot.command({"
+				"\tname: \"${1:name}\","
+				"\tcode: `${2:code}`"
+				"})",
+		],
+		"description": "Setting a Client Command"
+	},
+	"Bot Interaction Commands": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.interactionCommand",
+		"body": [
+			"bot.interactionCommand({"
+				"\tname: \"${1:name}\","
+				"\tprototype: \"${2:type}\""
+				"\tcode: `${3:code}`"
+				"})",
+		],
+		"description": "Setting a Client Interaction Command"
+	},
+	//Events
+	"Bot.onLeave": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onLeave",
+		"body": [
+			"bot.onLeave()",
+		],
+		"description": "Events for logging members they leave servers"
+	},
+	"Bot.onJoined": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onJoined",
+		"body": [
+			"bot.onJoined()",
+		],
+		"description": "Events for logging members they join servers"
+	},
+	//Functions
+	"abbreviate": {
+		"scope": "javascript,typescript",
+		"prefix": "abbreviate",
+		"body": [
+			"\\$abbreviate[${1:number};${2:decimal?}]",
+		],
+		"description": "This function abbreviates large numbers."
+	}, 
+	"activity": {
+		"scope": "javascript,typescript",
+		"prefix": "activity",
+		"body": [
+			"\\$activity[${1:guildID};${2:userID?}]",
+		],
+		"description": "This function shows the current activity of the indicated user (Only if it detects any activity), if the indicated user does not have an activity such as a 'custom status' it will show 'none'."
+	},
+}
