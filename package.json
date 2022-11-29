@@ -1,20 +1,31 @@
 {
-  "name": "aoi.js-snippets",
-  "version": "1.0.0",
+  "name": "aoijs-snippets",
+  "displayName": "Aoi.js Snippets",
+  "version": "0.0.1",
+  "publisher": "LiyaInnessa",
   "description": "This extension will make your coding experience much easier!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Slyrith/Aoi.js-Snippets.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Slyrith/Aoi.js-Snippets/issues"
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^0.10.0"
   },
-  "homepage": "https://github.com/Slyrith/Aoi.js-Snippets#readme"
+  "keywords": [
+    "Aoi.js",
+    "Snippets",
+    "Aoi.js Snippets"
+  ],
+  "categories": [
+    "snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./aoi.code-snippets"
+      }
+    ]
+  }
 }
