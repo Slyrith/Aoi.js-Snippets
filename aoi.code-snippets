@@ -239,4 +239,20 @@
 		],
 		"description": "This function will add a member to a channel's thread."
 	},
+	"addTimestamp": {
+		"scope": "javascript,typescript",
+		"prefix": "addTimestamp",
+		"body": [
+			"\\$addTimestamp[${1:index?};${2:ms?}]"
+		],
+		"description": "This function will add a time stamp in footer."
+	},
+	"advancedTextSplit": {
+		"scope": "javascript,typescript",
+		"prefix": "addTimestamp",
+		"body": [
+			"\\$advancedTextSplit[${1:index?};${2:ms?}]"
+		],
+		"description": "This function will add a time stamp in footer."
+	},
 }
