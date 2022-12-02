@@ -142,6 +142,110 @@
 		],
 		"description": "Events for logging roles they get updated"
 	},
+	"Bot.onRateLimit": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onRateLimit",
+		"body": [
+			"bot.onRateLimit()"
+		],
+		"description": "Events for logging rate limits of the bot"
+	},
+	"Bot.onGuildJoin": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onGuildJoin",
+		"body": [
+			"bot.onGuildJoin()"
+		],
+		"description": "Events for logging what servers the bot joins"
+	},
+	"Bot.onGuildLeave": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onGuildLeave",
+		"body": [
+			"bot.onGuildLeave()"
+		],
+		"description": "Events for logging what servers the bot leaves"
+	},
+	"Bot.onMessage": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onMessage",
+		"body": [
+			"bot.onMessage()"
+		],
+		"description": "Events for logging & responding to messages"
+	},
+	"Bot.onMessageDelete": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onMessageDelete",
+		"body": [
+			"bot.onMessageDelete()"
+		],
+		"description": "Events for logging messages they get deleted"
+	},
+	"Bot.onMessageUpdate": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onMessageUpdate",
+		"body": [
+			"bot.onMessageUpdate()"
+		],
+		"description": "Events for logging messages they get updated"
+	},
+	"Bot.onInteractionCreate": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onInteractionCreate",
+		"body": [
+			"bot.onInteractionCreate()"
+		],
+		"description": "Events for using slash commands"
+	},
+	"Bot.onReactionAdd": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onReactionAdd",
+		"body": [
+			"bot.onReactionAdd()"
+		],
+		"description": "Events for logging reactions on messages"
+	},
+	"Bot.onReactionRemove": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onReactionRemove",
+		"body": [
+			"bot.onReactionRemove()"
+		],
+		"description": "Events for logging removed reactions on messages"
+	},
+	"Bot.onUserUpdate": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onUserUpdate",
+		"body": [
+			"bot.onUserUpdate()"
+		],
+		"description": "Events for logging users updating their profile"
+	},
+	"Bot.onMemberUpdate": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onMemberUpdate",
+		"body": [
+			"bot.onMemberUpdate()"
+		],
+		"description": "Events for logging members updates in a server"
+	},
+	"Bot.onPresenceUpdate": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onPresenceUpdate",
+		"body": [
+			"bot.onPresenceUpdate()"
+		],
+		"description": "Events for logging presence updates of users"
+	},
+	"Bot.onVoiceStateUpdate": {
+		"scope": "javascript,typescript",
+		"prefix": "bot.onVoiceStateUpdate",
+		"body": [
+			"bot.onVoiceStateUpdate()"
+		],
+		"description": "Events for logging voice state updates of members in a server"
+	},
 	//Functions
 	"abbreviate": {
 		"scope": "javascript,typescript",
@@ -249,10 +353,18 @@
 	},
 	"advancedTextSplit": {
 		"scope": "javascript,typescript",
-		"prefix": "addTimestamp",
+		"prefix": "advancedTextSplit",
 		"body": [
 			"\\$advancedTextSplit[${1:index?};${2:ms?}]"
 		],
-		"description": "This function will add a time stamp in footer."
+		"description": "This function basically allows you to have multiple splits in 1 message"
+	},
+	"advanceCooldown": {
+		"scope": "javascript,typescript",
+		"prefix": "advanceCooldown",
+		"body": [
+			"\\$advanceCooldown[${1:time};${2:id};${3:error?}]"
+		],
+		"description": "This function will create a cooldown for the given ID."
 	},
 }
